@@ -17,20 +17,20 @@ CREATE TABLE AddressBook (
 
 # --UC3--
 INSERT INTO AddressBook (FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email)
-VALUES ('John', 'Doe', '123 Main St', 'City', 'State', '12345', '123-456-7890', 'john@example.com');
+VALUES ('sai', 'ram', '123 Main St', 'hyd', 'Ts', '12345', '123-456-7890', 'battusairam@gmail.com');
 
 # --UC4--
 UPDATE AddressBook
-SET Address = '456 New St', City = 'New City', State = 'New State', Zip = '54321'
-WHERE FirstName = 'John' AND LastName = 'Doe';
+SET Address = 'main kdp 1-50', City = 'Hyderabad', State = 'telangana', Zip = '54321'
+WHERE FirstName = 'sai' AND LastName = 'ram';
 
 # --UC5--
 DELETE FROM AddressBook
-WHERE FirstName = 'John' AND LastName = 'Doe';
+WHERE FirstName = 'sai' AND LastName = 'ram';
 
 # --UC6--
 SELECT * FROM AddressBook
-WHERE City = 'City' OR State = 'State';
+WHERE City = 'hyd' OR State = 'Ts';
 
 # --UC7--
 SELECT City, State, COUNT(*) AS Size
@@ -40,7 +40,7 @@ GROUP BY City, State;
 # --UC8--
 SELECT *
 FROM AddressBook
-WHERE City = 'City'
+WHERE City = 'Hyd'
 ORDER BY FirstName, LastName;
 
 # --UC9--
